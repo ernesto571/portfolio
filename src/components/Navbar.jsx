@@ -20,17 +20,17 @@ function Navbar() {
             </nav>
 
             {/* available for small screens */}
-            <nav className="flex justify-around w-full dark:bg-[#272149] bg-white fixed z-10 bottom-0 px-2 py-2 md:hidden lg:hidden">
+            <nav className="flex justify-around w-full dark:bg-gray-800 bg-white fixed z-10 bottom-0 px-2 py-2 md:hidden lg:hidden">
             <a
                 href="#home"
-                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#7767d2] transition">
+                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#30285c] transition">
                 <Home className="w-5 h-5" />
                 Home
             </a>
 
             <a
                 href="#about"
-                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#7767d2] transition"
+                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#30285c] transition"
             >
                 <User className="w-5 h-5" />
                 About
@@ -38,7 +38,7 @@ function Navbar() {
 
             <a
                 href="#skills"
-                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#7767d2] transition"
+                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#30285c] transition"
             >
                 <Zap className="w-5 h-5" />
                 Skills
@@ -46,7 +46,7 @@ function Navbar() {
 
             <a
                 href="#project"
-                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#7767d2] transition"
+                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#30285c] transition"
             >
                 <Folder className="w-5 h-5" />
                 Projects
@@ -54,7 +54,7 @@ function Navbar() {
 
             <a
                 href="#contact"
-                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#7767d2] transition"
+                className="flex flex-col items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#30285c] transition"
             >
                 <Send className="w-5 h-5" />
                 Contact
