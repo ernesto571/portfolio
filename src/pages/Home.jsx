@@ -8,7 +8,7 @@ import { ProjectsSection } from "../components/ProjectsSection";
 
 function Home() {
     return (
-        <div className="bg-white dark:bg-gray-900 max-h-screen transition-colors duration-300">
+        <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
             <Navbar />
             <ShootingStarsBackground/>
             
