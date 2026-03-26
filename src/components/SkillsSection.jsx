@@ -38,12 +38,12 @@ export const SkillsSection = () => {
     // Animate the whole section in
     gsap.from("#skill-section", {
       opacity: 0,
-      yPercent: 20,
+      yPercent: 10,
       duration: 1,
       ease: "expo.out",
       scrollTrigger: {
         trigger: "#skill-section",
-        start: "top 95%",
+        start: "top 90%",
       },
     });
 
