@@ -7,7 +7,7 @@ function Navbar() {
             <nav className="flex justify-between w-[100%]  fixed z-10 bg-white dark:bg-gray-800 place-items-center py-2">
                 <h1 className="flex text-[1.4rem] font-bold pl-5 text-gray-800 dark:text-white gap-1">
                     {/* portfolio title */}
-                    Ernesto's <p className="text-[#6859ba]">Portfolio</p>
+                    Emmanuels's <p className="text-[#6859ba]">Portfolio</p>
                 </h1>
                 <div className="flex place-items-center lg:gap-9 md:gap-5 my-1.5 font-semibold text-[1.1rem]">
                     <a href="#home" className="text-gray-800  dark:text-white hover:text-[#6859ba] dark:hover:text-[#6859ba] transition-colors hidden md:flex lg:flex">Home</a>
