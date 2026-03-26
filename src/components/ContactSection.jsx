@@ -32,11 +32,11 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     const messageContent = `
-Name: ${formData.name}
-Email: ${formData.email}
+    Name: ${formData.name}
+    Email: ${formData.email}
 
-💬 Message:
-${formData.message}
+    💬 Message:
+    ${formData.message}
     `;
 
     console.log("Sending contact form:", {

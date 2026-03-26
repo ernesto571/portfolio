@@ -1,18 +1,59 @@
 import { Briefcase, Code, User } from "lucide-react";
 import ShootingStarsBackground from "./ShootingStarsBackground";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const AboutSection = () => {
+
+  useGSAP(() => {
+    gsap.from("#main-section", {
+      opacity: 0,
+      yPercent: 20,
+      duration: 1,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 80%",
+      },
+    });
+  
+    gsap.from("#left-abt", {
+      opacity: 0,        // ✅ was 0 but paired with xPercent: 0 — no movement
+      xPercent: -10,     // ✅ slide in from the left
+      duration: 1,
+      ease: "expo.out",  // ✅ add easing for smoothness
+      scrollTrigger: {
+        trigger: "#left-abt",
+        start: "top 80%",
+      },
+    });
+  
+    gsap.from("#right-abt", {
+      opacity: 0,        // ✅ was 1 — now actually fades in
+      xPercent: 10,      // ✅ slide in from the right (subtle)
+      duration: 1,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: "#right-abt",
+        start: "top 80%",
+      },
+    });
+  }, []);
+
   return (
-    <section  className="py-24 px-4 relative scroll-mt-16 min-h-screen flex items-center bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="about"  className="py-24 px-4 relative scroll-mt-16 min-h-screen flex items-center bg-white dark:bg-gray-900 transition-colors duration-300">
       <ShootingStarsBackground/>
-      <div className="w-full max-w-5xl mx-auto">
+      <div id="main-section" className="w-full max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">
           About <span className="text-[#6859ba]">Me</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="space-y-6">
+          <div id="left-abt" className="space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Passionate Web Developer & Tech Creator
             </h3>
@@ -45,7 +86,7 @@ export const AboutSection = () => {
           </div>
 
           {/* Right content - Cards */}
-          <div className="grid grid-cols-1 gap-6">
+          <div id="right-abt" className="grid grid-cols-1 gap-6">
             <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-105 transition-all duration-300">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-[#6859ba]/10">

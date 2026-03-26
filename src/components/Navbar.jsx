@@ -4,7 +4,7 @@ import { Send, Zap, User, Folder, Home } from "lucide-react";
 function Navbar() {
     return (
         <div className="border-b-[1px] border-solid border-gray-300  dark:border-gray-600 bg-white dark:bg-gray-800 transition-colors duration-300">
-            <nav className="flex justify-between w-[100%]  fixed z-10 bg-white dark:bg-gray-800 place-items-center ">
+            <nav className="flex justify-between w-[100%]  fixed z-10 bg-white dark:bg-gray-800 place-items-center py-2">
                 <h1 className="flex text-[1.4rem] font-bold pl-5 text-gray-800 dark:text-white gap-1">
                     {/* portfolio title */}
                     Ernesto's <p className="text-[#6859ba]">Portfolio</p>
