@@ -43,7 +43,7 @@ export const SkillsSection = () => {
       ease: "expo.out",
       scrollTrigger: {
         trigger: "#skill-section",
-        start: "top 90%",
+        start: "top 95%",
       },
     });
 
